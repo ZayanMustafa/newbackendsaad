@@ -14,7 +14,8 @@ export const vinOrderCollection = async (req, res) => {
             vinNumber,
             vehicleModel,
             year,
-            paymentStatus: "pending" // Default status
+            paymentStatus: "pending" 
+// Default status
         });
 
         const savedOrder = await orderSave.save();
